@@ -1,50 +1,21 @@
 # Tarjeta de crédito válida
 
-## Índice
+# CARD VALIDATION
+## Entretenimiento Digital
+El proyecto consta de una app web en la cual se ofertan servicios de Entretenimiento Digital como: Netflix, Spotify, Star+, Disney+, entre otros, donde al realizar el pago se valida el # de tarjeta con la cual se realizara la compra del servicio.
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
 
-***
+## ¿Quienes son los usuarios?
 
-## 1. Preámbulo
+Los ususarios son todxs lxs personas mayores de edad que deseen adquirir los servios de entretenimiento digital de paginas o aplicaciones como Netflix, Star+, Disney+, Spotify, HBO, entre otras. Lxs cuales buscan tener alternativas de ocio mediante el uso de dispositivos moviles.
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+## Solución del problema/necesidad
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
+Tras la pandemia el uso masivo de la digitalización aumento, en especial el de los dispositivos moviles, lxs personas aumentaron su consumo de productos y servicios digitales, donde buscan encontrar pasatiempos, las aplicaciones de contenidos audiovisual ofrecen diversas opciones para la diversión personal, desde ver series, peliculas, documentales o videos y escuchar musica o podcast.
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+### Primer Prototipo
 
-## 2. Resumen del proyecto
-
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
-
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
-
-Trabajando de manera individual, aprenderás a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
-
-## 3. Objetivos de aprendizaje
-
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
+![Foto primer prototipo en papel](src/Image/Prototipo_papel.png)
 
 ### HTML
 
