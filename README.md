@@ -17,9 +17,11 @@ Tras la pandemia el uso masivo de la digitalización aumento, en especial el de 
 
 ### Feedback
 
-Al realizar feedback de la primera idea, se generaron ´preguntas como si lxs personas si utilizan estos servicios seguidos o si recurren al pago de estos con medios electronicos, en este caso las tarjetas de credito, para lo cual informe que si se usan muy seguido ya que estois servicios estan en auge y son inovados constantemente, ademas en la actualidad el pago con medios electronicos es mucho mas usado.
+Al realizar feedback de la primera idea, se generaron preguntas como: ¿si lxs personas si utilizan estos servicios seguidos o si recurren al pago de estos con medios electronicos?, en este caso las tarjetas de credito, para lo cual informe que si se usan muy seguido ya que estos servicios estan en auge y son inovados constantemente, ademas en la actualidad el pago con medios electronicos es mucho mas usado.
 
-tras ver que si era posible mi idea principal era la venta de estos servicios de forma individual pero mi dupla o compañera me dijo que no es tan llamativo que quiza buscara poner un carrito de compras o buscar otra idea mas llamativa a lo cual le comente que lo pensaba manejar ofertando combos de servicios y seria asi mas atratctivo, por lo cual ella le gusto la idea.
+Tras ver que si era posible, mi idea principal era la venta de estos servicios de forma individual, pero mi dupla o compañera me dijo que no es tan llamativo que quiza buscara poner un carrito de compras o buscar otra idea mas llamativa a lo cual le comente que lo pensaba manejar ofertando combos de servicios y seria asi mas atratctivo, por lo cual ella le gusto la idea.
+
+A su vez al compartir el prototipo creado es slides, se generan propuestas para la modificacion del estilo y diseño modificando su tamaño y su  posicionamiento.
 
 ### Prototipo Final
 
