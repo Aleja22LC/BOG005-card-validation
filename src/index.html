@@ -12,6 +12,7 @@
       <!--pongo el titulo que deseo se vea en mi pagina -->
       <h1>ENTRETENIMIENTO DIGITAL</h1>
     </header>
+    <section id="tablabasica">
     <!-- creo tabla basica -->
     <table class="Prueba">
       <!-- filas contenedoras de celadas-->
@@ -86,12 +87,25 @@
       </tr>
   
     </table>
+    </section>
+    <section id="infopago">
     <!-- inicio la segunda ventana -->
     <h1>INFORMACIÓN DEL PAGO</h1>
     <h2>(Validation Card)</h2>
       <img src="Image/TDC.png" width="450" height="300" title="Ejemplo Tarjeta Credito" alt="Ejemplo Tarjeta Credito">
-      <input type ="text"/>
+      <form method="post" action="http://127.0.0.1:5500/src/index.html">
 
+      <p><label>Nombre Titular</label><br><input type ="text" name="nombre" id="nombre" placeholder="Nombre (name)" size="40" maxlength="30"/></p>
+
+      <p><label>Fecha de expiración</label><br><input type="text" name="fecha" id="fechaexp" placeholder="Expiración (mm/yy)" size="14" maxlength="4" /></p>
+
+      <p><label>Código de Verificación</label><br><input type="number" name="ccv" id="ccv" placeholder="CVV" size="10" maxlength="3" /></p>
+
+      <p><label>Número de Tarjeta</label><br><input type="number" name="numerocard" id="numerocard" placeholder="Card Number" size="30" maxlength="16" /></p>
+
+      </form>
+      
+    </section>
     <!-- agrego el pie de pagina  -->
     <footer>
       <!-- agrego un texto y adiciono etiqueta "a" que es para adjuntar link a donde me debe llevar esto va dentro de las comillas de href ejm # de tel -->
