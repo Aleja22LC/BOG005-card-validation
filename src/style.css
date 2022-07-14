@@ -1,0 +1,10 @@
+table
+{
+    /* los bordes de la tabla aparecen juntos*/
+    border-collapse: collapse;
+}
+/*todas las celdas de la tabla tanto th como td*/
+td, th
+{
+    border: 1px solid purple;
+}
