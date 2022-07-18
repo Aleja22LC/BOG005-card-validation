@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="encabezado">
       <!-- inserto imagen -->
       <img src="Image/Imagen1.png" width="300" height="200" title="Entretenimiento Digital" alt="Entretenimiento Digital">
       <!--pongo el titulo que deseo se vea en mi pagina -->
-      <h1>ENTRETENIMIENTO DIGITAL</h1>
+      <h1 class="titulo">ENTRETENIMIENTO DIGITAL</h1>
     </header>
+    <!-- main describe el contenido pincipal-->
+    <main role="main">
     <section id="tablabasica">
     <!-- creo tabla basica -->
     <table class="Prueba">
@@ -49,11 +51,11 @@
       <tr>
         <!-- td celdas/ th encabezado/ scope"row"las celdas que afectan son las de la misma fila -->
         <th scope="row">PLANES <br> MENSUALES</th>
-        <td>$14.900 MES <br> <button><strong>Comprar</strong></button></td>
-        <td>$23.900 MES <br> <button><strong>Comprar</strong></button></td>
-        <td>$16.900 MES <br> <button><strong>Comprar</strong></button></td>
-        <td>$31.900 MES <br> <button><strong>Comprar</strong></button></td>
-        <td>$25.900 MES <br> <button><strong>Comprar</strong></button></td>
+        <td>$14.900 MES <br> <button class="button"><strong>Comprar</strong></button></td>
+        <td>$23.900 MES <br> <button class="button"><strong>Comprar</strong></button></td>
+        <td>$16.900 MES <br> <button class="button"><strong>Comprar</strong></button></td>
+        <td>$31.900 MES <br> <button class="button"><strong>Comprar</strong></button></td>
+        <td>$25.900 MES <br> <button class="button"><strong>Comprar</strong></button></td>
       </tr>
       <!-- filas contenedoras de celadas-->
       <tr>
@@ -79,15 +81,16 @@
       <tr>
         <!-- td celdas/ th encabezado/ scope"row"las celdas que afectan son las de la misma fila -->
         <th scope="row">PLANES <br> MENSUALES</th>
-        <td>$38.900 MES <br> <button><strong>Comprar</strong></button></td>
-        <td>$20.000 MES <br> <button><strong>Comprar</strong></button></td>
-        <td>$24.900 MES <br> <button><strong>Comprar</strong></button></td>
-        <td>$27.000 MES <br> <button><strong>Comprar</strong></button></td>
-        <td>$30.000 MES <br> <button><strong>Comprar</strong></button></td>
+        <td>$38.900 MES <br> <button class="button"><strong>Comprar</strong></button></td>
+        <td>$20.000 MES <br> <button class="button"><strong>Comprar</strong></button></td>
+        <td>$24.900 MES <br> <button class="button"><strong>Comprar</strong></button></td>
+        <td>$27.000 MES <br> <button class="button"><strong>Comprar</strong></button></td>
+        <td>$30.000 MES <br> <button class="button"><strong>Comprar</strong></button></td>
       </tr>
   
     </table>
     </section>
+    </main>
     <section id="infopago">
     <!-- inicio la segunda ventana -->
     <h1>INFORMACIÓN DEL PAGO</h1>
@@ -95,19 +98,21 @@
       <img src="Image/TDC.png" width="450" height="300" title="Ejemplo Tarjeta Credito" alt="Ejemplo Tarjeta Credito">
       <form method="post" action="http://127.0.0.1:5500/src/index.html">
 
-      <p><label>Nombre Titular</label><br><input type ="text" name="nombre" id="nombre" placeholder="Nombre (name)" size="40" maxlength="30"/></p>
+      <p><label for="nombre">Nombre Titular</label><br><input type ="text" name="nombre" id="nombre" placeholder="Nombre (name)" size="40" maxlength="30" required autofocus/></p>
 
-      <p><label>Fecha de expiración</label><br><input type="text" name="fecha" id="fechaexp" placeholder="Expiración (mm/yy)" size="14" maxlength="4" /></p>
+      <p><label for="fecha">Fecha de expiración</label><br><input type="number" name="fecha" id="fechaexp" placeholder="Expiración (mm/yy)" size="14" maxlength="4" required/></p>
 
-      <p><label>Código de Verificación</label><br><input type="number" name="ccv" id="ccv" placeholder="CVV" size="10" maxlength="3" /></p>
+      <p><label for="ccv">Código de Verificación</label><br><input type="password" name="ccv" id="ccv" placeholder="CVV" size="10" maxlength="3" required/></p>
 
-      <p><label>Número de Tarjeta</label><br><input type="number" name="numerocard" id="numerocard" placeholder="Card Number" size="30" maxlength="16" /></p>
+      <p><label for="numerocard">Número de Tarjeta</label><br><input type="text" name="numerocard" id="numerocard" placeholder="Card Number" size="30" maxlength="16" onkeypress="return" required/></p>
 
       </form>
-      
+      <input type="submit" value="Pagar" id="btnpay" class="btnpay"/>
+
+
     </section>
     <!-- agrego el pie de pagina  -->
-    <footer>
+    <footer id="pie">
       <!-- agrego un texto y adiciono etiqueta "a" que es para adjuntar link a donde me debe llevar esto va dentro de las comillas de href ejm # de tel -->
       <p><strong>CONTACTANOS</strong> <a href=""> tel : 5555555 </a> </p>
     </footer>
