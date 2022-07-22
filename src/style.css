@@ -2,15 +2,31 @@
     margin: 0px;
     padding: 0px;
 }
-h1 {
+/* tipo de tamaño, letra, color para el h1 titulo */
+h1.titulo {
     font: bold 50px verdana, sans-serif;
+    color: whitesmoke;
 }
+/* declararlos para que sean tratados como div*/
 header,section,footer{
     display: block;
 }
+/*header {
+    /* colocar q la cabecera ocupe el ancho completo de la página 
+    width: 100%;
+    /* Posicionar la cabecera al lado izquierdo 
+    left: 0;
+    /* Posicionar la cabecera pegada arriba 
+    top: 0;
+    /* colocar la cabecera en posición fija 
+    position: fixed;  
+}*/
+
+
+/* alineo todo el cuerpo al centro, inserto fondo.y que no se repita el fondo como mosaico */
 body {
 text-align: center;
-background-image: url(Image/galaxia1.jpg);
+background-image: url(Image/galaxia0.jpg);
 background-repeat: no-repeat;
 }
 
@@ -18,6 +34,8 @@ table
 {
     /* los bordes de la tabla aparecen juntos*/
     border-collapse: collapse;
+    /* colocar q la tabla ocupe el 80% de ancho de la página */
+    width: 70%;
 }
 /*todas las celdas de la tabla tanto th como td*/
 td, th
@@ -27,6 +45,15 @@ td, th
 /*#infopago {
     display: none;
 }*/
+h1.infopay{
+    font: bold 50px verdana, sans-serif;
+    color: black;
+}
+h2 {
+    font: bold 25px verdana, sans-serif;
+    color: gray;
+}
+/* le di color o relleno al cuadro de las etiquetas de la TC */
 :required {
     background-color: rgb(248, 243, 243);
 }
