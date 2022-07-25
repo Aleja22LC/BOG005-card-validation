@@ -13,3 +13,4 @@ function numerocard() {
     console.log(validator.isValid(inputvalue))   
 
 }
+//
