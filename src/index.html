@@ -7,16 +7,17 @@
   </head>
   <body>
     <header id="header">
+      
       <figure>
            <!-- inserto imagen -->
       <img src="Image/Imagen1.png" width="300" height="200" title="Entretenimiento Digital" alt="Entretenimiento Digital" class="encabezado">
       </figure>
       <!--pongo el titulo que deseo se vea en mi pagina -->
       <h1 class="titulo">ENTRETENIMIENTO DIGITAL</h1>
-    
+      
     </header>
     <!-- main describe el contenido pincipal-->
-    <main role="main">
+    
     <section id="tablabasica">
     <!-- creo tabla basica -->
     <table class="prueba">
@@ -93,7 +94,7 @@
   
     </table>
     </section>
-    </main>
+    <main role="main">
     <section id="infopago">
       <!-- agrupo entradas seleccionas esta le da un borde alrededor de los datos selccionados -->
       <fieldset>
@@ -102,19 +103,26 @@
     <h2>(Validation Card)</h2>
       <img src="Image/TDC.png" width="450" height="300" title="Ejemplo Tarjeta Credito" alt="Ejemplo Tarjeta Credito" class="imgcard">
       
-      <p><label for="nombre">Nombre Titular</label><br><input type ="text" name="nombre" id="nombre" placeholder="Nombre (name)" size="40" maxlength="30" required autofocus/></p>
+      <p><label for="nombre">Nombre Titular</label><br>
+        <input type ="text" name="nombre" id="nombre" placeholder="Nombre (name)" size="40" maxlength="30" required autofocus/></p>
 
-      <p><label for="fechaexp">Fecha de expiración</label><br><input type="number" name="fecha" id="fechaexp" placeholder="Expiración (mm/yy)" size="14" maxlength="4" required/></p>
+      <p><label for="fechaexp">Fecha de expiración</label><br>
+        <input type="text" name="fecha" id="fechaexp" placeholder="Expiración (mm/yy)" size="14" maxlength="4" 
+        onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required/></p>
 
-      <p><label for="ccv">Código de Verificación</label><br><input type="password" name="ccv" id="ccv" placeholder="CVV" size="10" maxlength="3" required/></p>
+      <p><label for="ccv">Código de Verificación</label><br>
+        <input type="password" name="ccv" id="ccv" placeholder="CCV" size="10" maxlength="3" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required/></p>
 
-      <p><label for="numerocard">Número de Tarjeta</label><br><input type="number" id="numerocard" class="numerocard" placeholder="Card Number" size="30" maxlength="16" required/></p> <br>
+      <p><label for="numerocard">Número de Tarjeta</label><br>
+        <input type="text" id="numerocard" class="numerocard" placeholder="Número de Tarjeta" size="30" maxlength="16" 
+        onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required/></p> <br>
     
       <!-- <input type="submit" value="Pagar" id="btnpay" /> -->
       <button id="btnpay">Pagar</button>
     </fieldset>
 
     </section>
+    </main>
     <!-- agrego el pie de pagina  -->
     <footer id="pie">
       <!-- agrego un texto y adiciono etiqueta "a" que es para adjuntar link a donde me debe llevar esto va dentro de las comillas de href ejm # de tel -->
