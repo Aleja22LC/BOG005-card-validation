@@ -17,7 +17,7 @@ const validator = {
         //recorrer cada digito del array (posicion "posi" y valor "val")
         reversedigits.forEach((val, posi) => {
             //posi = aisla las posiciones pares
-            
+
             if (posi % 2 === 0) {
                 //se multiplican por 2 los valores aislados
                 let pares = val * 2
@@ -47,7 +47,8 @@ const validator = {
 
         });
         console.log(todoslosarray)
-        //como sumo los numeros que hay dentro de un array
+
+        //sumo los numeros que hay dentro de un array
         const sumaarray = todoslosarray.reduce((a, b) => a + b);
         console.log(sumaarray)
 
@@ -57,18 +58,31 @@ const validator = {
         } else {
             return false;
         }
+    },
+
+    maskify: function (creditCardNumber) {
+        //variable para usar al momento de concatenar
+        let maskifai = '';
+        //obtengo los primeros 12 numeros de la tarjeta //remplazo los numeros con ####
+        let primeros12 = creditCardNumber.toString().slice(0, -4).replace(/\w/g, '#');
+        console.log(primeros12)
+        //obtengo los ultimos 4 numeros de la tarjeta que no cambian
+        let ultimos4 = creditCardNumber.toString().slice(-4);
+        console.log(ultimos4)
+        //sumo las dos variables
+        maskifai = primeros12 + ultimos4
+
+        console.log(maskifai)
+        return maskifai;
+
     }
 
-    // maskify: function (creditCardNumber) {
-    //     var simbolo = '#';
-    //     var mascara = (creditCardNumber.slice(0, -4).replace(/./g, simbolo) + ('' + creditCardNumber.slice(-4)));
-    //     return mascara;
-    // }
 
-  
+    
 
 
-// cardnumber valid 491268510318
+
+    // cardnumber valid 4912685103187545
 
 };
 

@@ -10,7 +10,10 @@ function numerocard() {
     console.log(inputvalue)
     //alert("funciona")
     /*invoque la funcion is.valid */
-    console.log(validator.isValid(inputvalue))   
+    console.log(validator.isValid(inputvalue))
+    //llamo la funcion de masky 
+    console.log(validator.maskify(inputvalue))
 
 }
+
 //
