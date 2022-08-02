@@ -18,8 +18,9 @@ const validator = {
         reversedigits.forEach((val, posi) => {
             //posi = aisla las posiciones pares
 
-            if (posi % 2 === 0) {
+            if (posi % 2 !== 0) {
                 //se multiplican por 2 los valores aislados
+                
                 let pares = val * 2
                 //todoslosarray.push(pares)
 
@@ -39,6 +40,7 @@ const validator = {
                 }
 
             } else {
+                
                 sumatotal.push(val)
 
                 
