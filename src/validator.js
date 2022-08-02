@@ -13,7 +13,7 @@ const validator = {
         //declararar variable para la suma de los valores finales pares e impares
         let sumatotal = [];
 
-        let todoslosarray = []
+        //let todoslosarray = [];
         //recorrer cada digito del array (posicion "posi" y valor "val")
         reversedigits.forEach((val, posi) => {
             //posi = aisla las posiciones pares
@@ -21,16 +21,16 @@ const validator = {
             if (posi % 2 === 0) {
                 //se multiplican por 2 los valores aislados
                 let pares = val * 2
-                todoslosarray.push(pares)
+                //todoslosarray.push(pares)
 
-                // console.log(arraypares)
+                //console.log(todoslosarray)
                 //sumo los numeros mayores de 9 o de con digitos
                 if (pares > 9) {
                     //los #>9=pares al sumar sus digitos y restar este resultado obtenido siempre da 9
                     let sumapares = pares - 9
                     // uso push para modificar o cambiar los elemnetos del array 
                     //parseint me devuelve el numero entero despues de separarlo en digitos
-                    sumatotal.push(pares.toString().split("").reduce((a, b) => parseInt(a) + parseInt(b)));
+                    sumatotal.push(sumapares);
 
                     //console.log("cambioparametros")
 
@@ -39,17 +39,16 @@ const validator = {
                 }
 
             } else {
-                todoslosarray.push(parseInt(val))
+                sumatotal.push(val)
 
-                // sumatotal.push(parseInt(val));
-                // console.log("elseparaimpares")
+                
             }
 
         });
-        console.log(todoslosarray)
+        //console.log(todoslosarray)
 
         //sumo los numeros que hay dentro de un array
-        const sumaarray = todoslosarray.reduce((a, b) => a + b);
+        const sumaarray = sumatotal.reduce((a, b) => parseInt(a) + parseInt (b),0);
         console.log(sumaarray)
 
         //como verificar que un numero de un array es multiplo de 10
@@ -63,7 +62,7 @@ const validator = {
     maskify: function (creditCardNumber) {
         //variable para usar al momento de concatenar
         let maskifai = '';
-        //obtengo los primeros 12 numeros de la tarjeta //remplazo los numeros con ####
+        //obtengo los primeros 12 numeros de la tarjeta //remplazo los numeros con regexp "/\w/g" (expresion regular) => ####
         let primeros12 = creditCardNumber.toString().slice(0, -4).replace(/\w/g, '#');
         console.log(primeros12)
         //obtengo los ultimos 4 numeros de la tarjeta que no cambian
@@ -77,12 +76,9 @@ const validator = {
 
     }
 
-
-    
-
-
-
     // cardnumber valid 4912685103187545
+    //4083952015263
+    
 
 };
 
