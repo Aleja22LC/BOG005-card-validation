@@ -15,11 +15,14 @@ function numerocard() {
     console.log(validator.maskify(inputvalue))
 
 }
+     //btn1.addEventListener('click', function () {
 
-document.getElementById("btn1").addEventListener("click", () => {
-    document.getElementById("tablabasica").style.display = "block";
-    document.getElementById("infopago").style.display = "none";
-})
+    //     document.getElementById("infopago").style.display = "none";
+    //     document.getElementById("tablabasica").style.display = "block";
+        
+    // })
+
+
 //boton pagar que ejecuta la validacion de la tc y el enmascarado
 document.getElementById("btnpay").addEventListener("click", () => {
     let name = document.getElementById("nombre").value;
@@ -28,8 +31,7 @@ document.getElementById("btnpay").addEventListener("click", () => {
     let entrada = document.getElementById("numerocard").value;
     //llamo la funcion isvalid
     let aprobado = validator.isValid(entrada);
-    
-    
+        
     if (name === '') {
         return alert("POR FAVOR INTRODUZCA NOMBRE DEL TITULAR")
     }
@@ -39,12 +41,12 @@ document.getElementById("btnpay").addEventListener("click", () => {
     if (codi === '') {
         return alert("POR FAVOR INGRESE CÓDIGO DE VERIFICACION DE LA TARJETA")
     }
-    if (entrada === '') {
+    if (entrada === null || entrada === '') {
         return alert("POR FAVOR INGRESE EL NUMERO DE  LA TARJETA")
     }
     console.log(aprobado);
 
-    //enmascaro el numero dentro del input
+    //enmascaro el numero dentro del input llamando maskify
     let enmascarar = validator.maskify(entrada);
 
     document.getElementById("numerocard").value = enmascarar;

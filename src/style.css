@@ -6,41 +6,85 @@
 h1.titulo {
     font: bold 50px verdana, sans-serif;
     color: whitesmoke;
+    
 }
+
+.encabezado {
+    max-width: 18rem;
+    float: left;
+    margin: 5px 30px 40px 100px;
+    box-shadow: 5px 5px  black;
+    
+}
+.titulo {
+    text-align: center;
+    background-color: rgba(53, 28, 110, 0.925);
+    opacity: 0.9;
+    border-radius: 40px;
+    border-style: groove;
+    border-width: 5px;
+    border-color: rgba(53, 28, 110, 0.925);
+    height: 150px;
+    margin: 40px 50px 40px 400px;
+    max-width: 90%;
+        
+}
+
 /* declararlos para que sean tratados como div*/
 header,section,footer{
     display: block;
-}
-/*header {
-    /* colocar q la cabecera ocupe el ancho completo de la página 
-    width: 100%;
-    /* Posicionar la cabecera al lado izquierdo 
-    left: 0;
-    /* Posicionar la cabecera pegada arriba 
-    top: 0;
-    /* colocar la cabecera en posición fija 
-    position: fixed;  
-}*/
+} 
 
+header {
+    /* colocar q la cabecera ocupe el ancho completo de la página*/ 
+    width: 100%;
+    /* colocar la cabecera en posición fija */
+    position: relative;  
+}
 
 /* alineo todo el cuerpo al centro, inserto fondo.y que no se repita el fondo como mosaico */
 body {
 text-align: center;
 background-image: url(Image/galaxia0.jpg);
 background-repeat: no-repeat;
+/* la imagen de fondo se desplaza con la pagina */
+background-attachment: scroll;
 }
 
-table
-{
+table {
     /* los bordes de la tabla aparecen juntos*/
     border-collapse: collapse;
     /* colocar q la tabla ocupe el 80% de ancho de la página */
-    width: 70%;
+    width: 85%;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*todas las celdas de la tabla tanto th como td*/
-td, th
+td
 {
-    border: 1px solid purple;
+    border: 2px solid rgba(77, 43, 158, 0.925);
+    height: 70px;
+    background-color: rgba(102, 101, 101, 0.911);
+    
+}
+
+th {
+    border: 2px solid rgba(53, 28, 110, 0.925);
+    height: 70px;
+    background-color: rgba(53, 28, 110, 0.925);
+    color:white ;
+
+ }
+
+.button {
+    background-color: rgb(110, 165, 247);
+    border-radius: 10%;
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
 }
 /* #infopago {
     display: none;
@@ -56,4 +100,40 @@ h2 {
 /* le di color o relleno al cuadro de las etiquetas de la TC */
 :required {
     background-color: rgb(248, 243, 243);
+}
+
+fieldset {
+    text-align: center;
+    outline-style: groove;
+    outline-color: rgba(53, 28, 110, 0.925);
+    outline-width: thick;
+    margin: 10px 55px 10px 100px;
+    background-color: azure;
+    opacity: 0.9;
+    border-top-right-radius: 100px;
+}
+
+.imgcard {
+    float: left;
+    margin: 50px 10px 40px 70px;
+}
+/* edito campo de entrada */
+input{
+    /* width: 30%; */
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+.btnpay {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 150px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
 }
